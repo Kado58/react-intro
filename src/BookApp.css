@@ -1,0 +1,68 @@
+.book-app {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.book-app h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.book-app .container {
+  display: flex;
+  justify-content: center;
+}
+
+.book-app .container>div {
+  margin: 0 10px;
+}
+
+.book-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.book-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-list h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.book-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-list li {
+  margin-bottom: 10px;
+}
+
+.book-list li strong {
+  font-weight: bold;
+}

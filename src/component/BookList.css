@@ -1,0 +1,17 @@
+.book-list {
+    background-color: #f4f4f4;
+    padding: 16px;
+}
+
+.book-list h2 {
+    color: #333;
+}
+
+.book-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-list li {
+    margin-bottom: 8px;
+}
