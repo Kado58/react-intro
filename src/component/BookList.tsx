@@ -5,6 +5,7 @@ interface Book {
   id: number;
   title: string;
   author: string;
+  publicationYear: number;
 }
 
 interface BookListProps {
@@ -18,7 +19,7 @@ const BookList: React.FC<BookListProps> = ({ books }) => {
       <ul>
         {books.map(book => (
           <li key={book.id}>
-            <strong>{book.title}</strong> - {book.author}
+            <strong>{book.title}</strong> - {book.author} - {book.publicationYear}
           </li>
         ))}
       </ul>

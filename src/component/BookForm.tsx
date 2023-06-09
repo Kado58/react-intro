@@ -5,6 +5,7 @@ interface Book {
     id: number;
     title: string;
     author: string;
+    publicationYear: number;
 }
 
 interface BookFormProps {
@@ -14,13 +15,15 @@ interface BookFormProps {
 const BookForm: React.FC<BookFormProps> = ({ onAddBook }) => {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
+    const [publicationYear, setPublicationYear] = useState(0);
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         const newBook: Book = {
             id: Date.now(),
             title,
-            author
+            author,
+            publicationYear
         };
         onAddBook(newBook);
         setTitle('');
@@ -42,6 +45,12 @@ const BookForm: React.FC<BookFormProps> = ({ onAddBook }) => {
                     placeholder="Yazar"
                     value={author}
                     onChange={event => setAuthor(event.target.value)}
+                />
+                <input
+                    type="text"
+                    placeholder="Yayımlanma Yılı"
+                    value={publicationYear}
+                    onChange={event => setPublicationYear(parseInt(event.target.value, 10))}
                 />
                 <button type="submit">Ekle</button>
             </form>
